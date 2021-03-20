@@ -16,6 +16,7 @@
  * 3. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
  *  `em` units.
  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -382,6 +383,13 @@ th {
 img {
   max-width: 100%;
   height: auto; }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Inter-Regular.woff2) format("woff2"); }
 
 .container {
   max-width: 320px; }
