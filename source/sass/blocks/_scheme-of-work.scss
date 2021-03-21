@@ -1,0 +1,93 @@
+.scheme-of-work {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 140px;
+  margin-bottom: 100px;
+
+
+  &__left {
+    width: 460px;
+  }
+
+  &__right {
+    width: 520px;
+  }
+
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    @include h2;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 60px;
+    @include l-txt;
+  }
+
+  &-list {
+    margin-top: 0;
+    padding-left: 72px;
+    list-style: none;
+
+    &__item {
+      position: relative;
+      margin-bottom: 30px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -72px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        border: 1px solid #DADEDF;
+      }
+
+      &--1 {
+        &::before {
+          content: "1";
+        }
+      }
+
+      &--2 {
+        &::before {
+          content: "2";
+        }
+      }
+
+      &--3 {
+        &::before {
+          content: "3";
+        }
+      }
+
+      &--4 {
+        &::before {
+          content: "4";
+        }
+      }
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      @include h3;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include txt;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+  }
+}

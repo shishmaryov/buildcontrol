@@ -1,0 +1,26 @@
+.optimize {
+padding-top: 120px;
+padding-bottom: 120px;
+background-color: $yellow;
+background-image: url("../img/content-images/webp/bg.webp");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 5px;
+margin-bottom: 150px;
+
+
+  &__title {
+    margin-bottom: 55px;
+    text-align: center;
+    @include h2;
+  }
+
+  .buttons {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .button-light {
+    background-color: $white;
+  }
+}
