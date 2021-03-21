@@ -1,0 +1,130 @@
+.for-building {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 145px;
+  padding-bottom: 125px;
+  padding-left: 200px;
+  color: $white;
+  background-color: $black;
+
+  &__text-block {
+    max-width: 590px;
+  }
+
+  &__img {
+    max-height: 493px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: $white;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+
+  &-item {
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include txt;
+    }
+  }
+
+  &__buttons {
+
+  }
+
+  &__button {
+
+    &--light {
+      color: $black;
+      background-color: #fff;
+    }
+
+    &--black {
+      border: 1px solid #fff;
+    }
+  }
+
+  &__points {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    background-color: $black;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-point {
+
+    &__title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      text-align: center;
+      color: $white;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $grey;
+    }
+  }
+
+  &__point {
+    position: relative;
+    padding-top: 55px;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 24px);
+      width: 48px;
+      height: 48px;
+    }
+
+
+    &--subcontractor {
+      &::before {
+        content: url("../../img/icons/svg/subcontractor.svg");
+      }
+    }
+
+    &--suppliers {
+      &::before {
+        content: url("../../img/icons/svg/suppliers.svg");
+      }
+    }
+
+    &--compliance {
+      &::before {
+        content: url("../../img/icons/svg/compliance.svg");
+      }
+    }
+  }
+}

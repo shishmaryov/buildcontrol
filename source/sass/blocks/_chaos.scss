@@ -1,0 +1,22 @@
+.chaos {
+  margin-bottom: 150px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    @include h2;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 40px;
+    text-align: center;
+    @include l-txt;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

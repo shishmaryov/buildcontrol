@@ -1,0 +1,41 @@
+@mixin h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: $black;
+}
+
+@mixin h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: $black;
+}
+
+@mixin h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+@mixin l-txt {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $grey;
+}
+
+@mixin txt {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey;
+}
+
+@mixin s-txt {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}

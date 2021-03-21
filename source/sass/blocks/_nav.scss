@@ -1,0 +1,25 @@
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    text-decoration: none;
+    @include txt;
+
+    &:hover {
+      color: $blue;
+    }
+
+  }
+}

@@ -1,0 +1,32 @@
+.care {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+
+  &__text-block {
+    max-width: 545px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    @include h2;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include l-txt;
+  }
+
+  &__link {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 464px;
+    height: 400px;
+  }
+}

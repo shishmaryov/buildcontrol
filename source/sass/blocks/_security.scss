@@ -1,0 +1,85 @@
+.security {
+  margin-bottom: 145px;
+
+  &__title {
+    position: relative;
+    width: 270px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    text-align: center;
+    @include h2;
+
+    &:before {
+      content: url("../img/icons/svg/leaf.svg");
+      position: absolute;
+      top: -18px;
+      right: 0;
+      width: 42px;
+      height: 40px;
+    }
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    @include l-txt;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 330px;
+    padding-top: 67px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 143px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--co2 {
+      &::before {
+        content: url("../../img/icons/svg/co2.svg");
+      }
+    }
+
+    &--eco {
+      &::before {
+        content: url("../../img/icons/svg/eco-green.svg");
+      }
+    }
+
+    &--society {
+      &::before {
+        content: url("../../img/icons/svg/society.svg");
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include h3;
+  }
+
+  &__subtext {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include txt;
+  }
+}

@@ -10,3 +10,73 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.button {
+
+  &-black {
+    align-items: center;
+    padding: 13px 25px;
+    font-size: 18px;
+    line-height: 24px;
+    color: $white;
+    background-color: $black;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: #2D3A42;
+    }
+
+    &:active {
+      color: #DADEDF;
+    }
+  }
+
+  &-light {
+    align-items: center;
+    padding: 13px 25px;
+    font-size: 18px;
+    line-height: 24px;
+    background-color: transparent;
+    border: 1px solid #DADEDF;
+    border-radius: 5px;
+
+    &:hover {
+      color: #5C7585;
+    }
+
+    &:active {
+      border: 1px solid #F3F3F3;
+    }
+  }
+}
+
+.link {
+  position: relative;
+  text-decoration: none;
+  @include l-txt;
+  color: $black;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 16px;
+    background-color: $yellow;
+  }
+
+  &:hover {
+    &:before {
+      background-color: #FFE188;
+    }
+  }
+
+  &:active {
+    &:before {
+      background-color: #EABF3D;
+    }
+  }
+}
