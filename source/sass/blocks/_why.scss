@@ -1,0 +1,105 @@
+.why {
+  margin-bottom: 150px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    @include h2;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 130px;
+  }
+
+  &-list {
+    max-width: 460px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 66px;
+    list-style: none;
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 10px;
+      @include h3;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include txt;
+    }
+
+    &__item {
+      position: relative;
+      margin-bottom: 30px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -66px;
+        width: 48px;
+        height: 48px;
+      }
+
+
+      &--software {
+        &::before {
+          content: url("../img/icons/svg/software.svg");
+        }
+      }
+
+      &--potential {
+        &::before {
+          content: url("../img/icons/svg/potential.svg");
+        }
+      }
+
+      &--choice {
+        &::before {
+          content: url("../img/icons/svg/choice.svg");
+        }
+      }
+
+      &--development {
+        &::before {
+          content: url("../img/icons/svg/development.svg");
+        }
+      }
+
+
+    }
+  }
+
+  &-partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+      width: 165px;
+      text-align: center;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+
+    &__text {
+      margin-top: 30px;
+      @include txt;
+    }
+  }
+}

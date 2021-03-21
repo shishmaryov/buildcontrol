@@ -1,0 +1,63 @@
+.footer {
+
+  &-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+
+  }
+
+  &__logo {
+    width: 175px;
+    height: 33px;
+  }
+
+  &__address {
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+
+  &__mail {
+    margin-bottom: 20px;
+  }
+
+  &__tel {
+
+  }
+
+  &__list {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  &__item {
+
+  }
+
+  &__title {
+    @include h3;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 31px;
+    border-top: 1px solid #DADEDF;
+    margin-top: 160px;
+    padding-bottom: 33px;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

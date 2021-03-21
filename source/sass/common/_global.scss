@@ -11,6 +11,12 @@ img {
   height: auto;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+}
+
 .button {
 
   &-black {
