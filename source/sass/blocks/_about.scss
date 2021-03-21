@@ -1,0 +1,57 @@
+.about {
+  margin-bottom: 145px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 21px;
+    text-align: center;
+    @include h2;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    @include l-txt;
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 977px;
+    margin-right: auto;
+    margin-bottom: 65px;
+    margin-left: auto;
+  }
+
+  &-item {
+
+    &__text-block {
+      max-width: 500px;
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      @include h3;
+    }
+
+    &__text {
+      margin-top: 0;
+      margin-bottom: 0;
+      @include txt;
+    }
+
+    &__img {
+
+    }
+  }
+}

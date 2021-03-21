@@ -1,0 +1,113 @@
+.delivery {
+  margin-bottom: 125px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    @include h2;
+  }
+
+  &__text {
+    max-width: 650px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 45px;
+    margin-left: auto;
+    text-align: center;
+    @include l-txt;
+  }
+
+  &__list {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 155px 155px 155px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 270px;
+    padding-left: 64px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 48px;
+      height: 48px;
+    }
+
+    &--concrete {
+      &:before {
+        content: url("../../img/icons/svg/concrete.svg");
+      }
+    }
+
+    &--recycling {
+      &:before {
+        content: url("../../img/icons/svg/recycling.svg");
+      }
+    }
+
+    &--formwork {
+      &:before {
+        content: url("../../img/icons/svg/formwork.svg");
+      }
+    }
+
+    &--precasts {
+      &:before {
+        content: url("../../img/icons/svg/precasts.svg");
+      }
+    }
+
+    &--facades {
+      &:before {
+        content: url("../../img/icons/svg/facades.svg");
+      }
+    }
+
+    &--fit-out {
+      &:before {
+        content: url("../../img/icons/svg/fit-out.svg");
+      }
+    }
+
+    &--scaffolding {
+      &:before {
+        content: url("../../img/icons/svg/scaffolding.svg");
+      }
+    }
+
+    &--equipment {
+      &:before {
+        content: url("../../img/icons/svg/equipment.svg");
+      }
+    }
+
+    &--mep {
+      &:before {
+        content: url("../../img/icons/svg/mep.svg");
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    @include h3;
+  }
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include txt;
+
+  }
+
+  &__view-all {
+
+  }
+}

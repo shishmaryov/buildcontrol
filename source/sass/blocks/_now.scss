@@ -1,0 +1,13 @@
+.now {
+  margin-bottom: 170px;
+
+  &__title {
+    max-width: 880px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    text-align: center;
+    @include h2;
+  }
+}

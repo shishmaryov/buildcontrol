@@ -1,0 +1,81 @@
+.promo {
+  margin-bottom: 150px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    @include h1;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+    margin-right: auto;
+    margin-bottom: 90px;
+    margin-left: auto;
+  }
+
+  &__button {
+
+    &--black {
+
+    }
+
+    &--light {
+
+    }
+  }
+
+  &__img {
+    width: 100%;
+
+    &--building {
+      margin-bottom: 35px;
+    }
+
+    &--trucks {
+      margin-bottom: 150px;
+    }
+  }
+
+  .advantages {
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: 325px;
+      text-align: center;
+    }
+
+    .advantage {
+
+      &__img {
+        width: 48px;
+        height: 48px;
+      }
+
+      &__title {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        @include h3;
+      }
+
+      &__text {
+        margin-top: 0;
+        margin-bottom: 0;
+        @include txt;
+      }
+    }
+
+  }
+
+}
