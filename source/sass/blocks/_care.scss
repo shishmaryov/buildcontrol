@@ -1,11 +1,31 @@
 .care {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 70px;
-  flex-wrap: wrap;
+  margin-left: calc(50% - 160px);
+
+  @media(min-width: 768px) {
+    margin-left: calc(50% - 338px);
+  }
+
+  @media(min-width: 1024px) {
+    margin-left: calc(50% - 440px);
+  }
+
 
   &__text-block {
     max-width: 545px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    padding-left: 15px;
+    text-align: center;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 0;
+      text-align: left;
+    }
   }
 
   &__title {
@@ -26,7 +46,8 @@
   }
 
   &__img {
-    width: 464px;
-    height: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
 }
