@@ -7,15 +7,27 @@
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
+    width: 100%;
+    flex-wrap: wrap;
   }
 
   &__item {
+    margin-right: 30px;
 
+    @media (min-width: 768px) {
+      margin-right: 0;
+    }
   }
 
   &__link {
     text-decoration: none;
     @include txt;
+    text-align: center;
+    line-height: 300%;
+
+    @media (min-width: 768px) {
+      line-height: 150%;
+    }
 
     &:hover {
       color: $blue;

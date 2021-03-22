@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-top: 140px;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 
 
   &__left {
@@ -11,6 +12,11 @@
 
   &__right {
     width: 520px;
+    margin-top: 50px;
+
+    @media(min-width: 1024px) {
+      margin-top: 0;
+    }
   }
 
 

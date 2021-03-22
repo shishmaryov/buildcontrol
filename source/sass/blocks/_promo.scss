@@ -48,11 +48,23 @@
       justify-content: space-between;
       padding-left: 0;
       list-style: none;
-      flex-wrap: wrap;
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      width: 325px;
+      height: 595px;
+
+      @media (min-width: 1024px) {
+        flex-direction: row;
+        width: auto;
+        height: auto;
+      }
     }
 
     &__item {
-      max-width: 325px;
+      width: 325px;
       text-align: center;
     }
 

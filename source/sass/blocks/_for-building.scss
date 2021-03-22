@@ -1,11 +1,17 @@
 .for-building {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 145px;
-  padding-bottom: 125px;
-  padding-left: 200px;
+  padding-top: 50px;
+  padding-left: 15px;
   color: $white;
   background-color: $black;
+
+  @media (min-width: 1024px) {
+    padding-top: 145px;
+    padding-bottom: 125px;
+    padding-left: 200px;
+  }
 
   &__text-block {
     max-width: 590px;
@@ -51,14 +57,25 @@
   }
 
   &__buttons {
+    display: block;
+    margin-bottom: 50px;
 
+    @media(min-width: 1024px) {
+      display: flex;
+      margin-bottom: 0;
+    }
   }
 
   &__button {
 
     &--light {
+      margin-bottom: 30px;
       color: $black;
       background-color: #fff;
+
+      @media(min-wdith: 1024px) {
+        margin-bottom: 0;
+      }
     }
 
     &--black {
@@ -67,14 +84,20 @@
   }
 
   &__points {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 120px;
     background-color: $black;
 
     .container {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      flex-wrap: wrap;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      padding-top: 50px;
+      padding-bottom: 120px;
+      gap: 30px;
+
+      @media(min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   }
 

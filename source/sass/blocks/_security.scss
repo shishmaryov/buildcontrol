@@ -29,18 +29,28 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 260px 280px 255px;
     margin-top: 0;
     margin-bottom: 60px;
     padding-left: 0;
     list-style: none;
+    gap: 30px;
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      gap: 0;
+      row-gap: 30px;
+    }
   }
 
   &__item {
     position: relative;
     max-width: 330px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 67px;
     text-align: center;
 
