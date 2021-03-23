@@ -2,8 +2,8 @@
 
   &-top {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__info {
@@ -16,8 +16,9 @@
   }
 
   &__address {
-    font-style: normal;
     margin-bottom: 10px;
+    text-align: left;
+    font-style: normal;
   }
 
   &__mail {
@@ -29,11 +30,11 @@
   }
 
   &__list {
-    padding-left: 0;
-    list-style: none;
+    display: block;
     margin-top: 0;
     margin-bottom: 0;
-    display: block;
+    padding-left: 0;
+    list-style: none;
   }
 
   &__item {
@@ -41,19 +42,19 @@
   }
 
   &__title {
-    @include h3;
     margin-top: 0;
     margin-bottom: 20px;
+    @include h3;
   }
 
   &__bottom {
     display: flex;
     justify-content: space-between;
-    padding-top: 31px;
-    border-top: 1px solid #DADEDF;
-    margin-top: 160px;
-    padding-bottom: 33px;
     align-items: center;
+    margin-top: 160px;
+    padding-top: 31px;
+    padding-bottom: 33px;
+    border-top: 1px solid #DADEDF;
   }
 
   &__copyright {
