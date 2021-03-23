@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/script.min.js"></script>
   <title>Строй Контроль. Умная доставка материалов для сложных строительных площадок</title>
 </head>
@@ -14,25 +15,25 @@
       <nav class="header__nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="" class="nav__link">Главная</a>
+            <a href="#home" class="nav__link">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">О нас</a>
+            <a href="#about" class="nav__link">О нас</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Продукция</a>
+            <a href="#products" class="nav__link">Продукция</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Процесс</a>
+            <a href="#process" class="nav__link">Процесс</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Надёжность</a>
+            <a href="#relability" class="nav__link">Надёжность</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Клиенты</a>
+            <a href="#clients" class="nav__link">Клиенты</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__link">Связаться с нами</a>
+            <a href="#" class="nav__link">Связаться с нами</a>
           </li>
         </ul>
       </nav>
@@ -40,7 +41,7 @@
     </div>
   </header>
   <main>
-    <section class="container promo">
+    <section id="home" class="container promo">
       <h1 class="promo__title">Умная доставка материалов для сложных строительных площадок</h1>
       <div class="promo__buttons">
         <button class="promo__button promo__button--black button-black">Заказать демо</button>
@@ -86,7 +87,7 @@
       </div>
       <img src="img/content-images/webp/responsible.webp" alt="Иллюстрация рабочих" class="care__img">
     </section>
-    <div class="companies">
+    <div class="container companies">
       <ul class="companies__list">
         <li class="companies__item">
           <a href="https://www.besix.com/" class="companies__link">
@@ -120,7 +121,7 @@
         </li>
       </ul>
     </div>
-    <section class="container about">
+    <section id="about" class="container about">
       <h2 class="about__title">Что такое СтройКонтроль?</h2>
       <p class="about__text">СтройКонтроль - это интеллектуальная система управления доставкой, предоставляющая информацию и контроль материалов на сложных строительных площадках в режиме реального времени.</p>
       <ul class="about__list">
@@ -194,7 +195,7 @@
         которые поступают или покидают вашу площадку
       </span>
     </section>
-    <section class="container security">
+    <section id="relability" class="container security">
       <h2 class="security__title">Надёжность</h2>
       <p class="security__text">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
       <ul class="security__list">
@@ -216,7 +217,7 @@
         <button class="button-light complectation__button">Подробнее</button>
       </div>
     </section>
-    <section class="for-building">
+    <section id="products" class="for-building">
       <div class="for-building__text-block">
         <h2 class="for-building__title">Создан для строительства</h2>
         <ul class="for-building__list">
@@ -256,7 +257,7 @@
         </div>
       </div>
     </div>
-    <section class="container scheme-of-work">
+    <section id="process" class="container scheme-of-work">
       <div class="scheme-of-work__left">
         <h2 class="scheme-of-work__title">Как с нами работать</h2>
         <p class="scheme-of-work__text">Начать работу со СтройКонтроль легко, достаточно заказать демо-версию.</p>
@@ -287,7 +288,7 @@
         </div>
       </div>
     </section>
-    <section class="container why">
+    <section id="clients" class="container why">
       <h2 class="why__title">Почему нужно выбрать нас?</h2>
       <p class="why__text">В строительной логистике всегда есть возможности для улучшения.</p>
       <div class="why__flex">
@@ -363,29 +364,29 @@
       <ul class="footer__list">
         <h3 class="footer__title">Наш продукт</h3>
         <li class="footer__item">
-          <a href="" class="nav__link">Процесс</a>
+          <a href="#process" class="nav__link">Процесс</a>
         </li>
         <li class="footer__item">
-          <a href="" class="nav__link">Продукция</a>
+          <a href="#products" class="nav__link">Продукция</a>
         </li>
 
       </ul>
       <ul class="footer__list">
         <h3 class="footer__title">Обслуживание</h3>
         <li class="footer__item">
-          <a href="" class="nav__link">Клиенты</a>
+          <a href="#clients" class="nav__link">Клиенты</a>
         </li>
         <li class="footer__item">
-          <a href="" class="nav__link">Надёжность</a>
+          <a href="#relability" class="nav__link">Надёжность</a>
         </li>
       </ul>
       <ul class="footer__list">
         <h3 class="footer__title">Компания</h3>
         <li class="footer__item">
-          <a href="" class="nav__link">О нас</a>
+          <a href="#about" class="nav__link">О нас</a>
         </li>
         <li class="footer__item">
-          <a href="" class="nav__link">Связаться с нами</a>
+          <a href="#" class="nav__link">Связаться с нами</a>
         </li>
       </ul>
     </div>
