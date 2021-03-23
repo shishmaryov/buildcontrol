@@ -1,0 +1,28 @@
+.social {
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    @include h2;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  &__item {
+    min-width: 100px;
+  }
+
+  &__link {
+    line-height: 300%;
+  }
+}
