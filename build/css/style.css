@@ -775,22 +775,25 @@ img {
     background-color: #EABF3D; }
 
 @font-face {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff"); }
-
-@font-face {
   font-family: "Inter";
   font-style: normal;
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
   font-weight: 500;
-  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff"); }
-
-@font-face {
   font-family: "Inter";
   font-style: normal;
+  src: url("../fonts/Inter-Medium.woff2") format("woff2"), url("../fonts/Inter-Medium.woff") format("woff");
+  font-display: swap; }
+
+@font-face {
   font-weight: 600;
-  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-Semibold.woff") format("woff"); }
+  font-family: "Inter";
+  font-style: normal;
+  src: url("../fonts/Inter-SemiBold.woff2") format("woff2"), url("../fonts/Inter-Semibold.woff") format("woff");
+  font-display: swap; }
 
 .index-page {
   font-family: "Inter", sans-serif; }
@@ -943,7 +946,11 @@ img {
     margin-bottom: 90px;
     margin-left: auto; }
   .promo__img {
-    width: 100%; }
+    width: 300px;
+    height: auto; }
+    @media (min-width: 768px) {
+      .promo__img {
+        width: 100%; } }
     .promo__img--building {
       margin-bottom: 35px; }
     .promo__img--trucks {
@@ -952,21 +959,21 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-left: 0;
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 325px;
-    height: 595px; }
+    height: 595px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding-left: 0;
+    list-style: none; }
     @media (min-width: 1024px) {
       .promo .advantages__list {
         -webkit-box-orient: horizontal;
@@ -1015,8 +1022,11 @@ img {
     line-height: 32px;
     color: #72787D; }
   .chaos__img {
-    width: 100%;
+    width: 300px;
     height: auto; }
+    @media (min-width: 1024px) {
+      .chaos__img {
+        width: 100%; } }
 
 .now {
   margin-bottom: 170px; }
@@ -1215,23 +1225,23 @@ img {
       width: 48px;
       height: 48px; }
     .delivery__item--concrete:before {
-      content: url("../../img/icons/svg/concrete.svg"); }
+      content: url("../img/icons/svg/concrete.svg"); }
     .delivery__item--recycling:before {
-      content: url("../../img/icons/svg/recycling.svg"); }
+      content: url("../img/icons/svg/recycling.svg"); }
     .delivery__item--formwork:before {
-      content: url("../../img/icons/svg/formwork.svg"); }
+      content: url("../img/icons/svg/formwork.svg"); }
     .delivery__item--precasts:before {
-      content: url("../../img/icons/svg/precasts.svg"); }
+      content: url("../img/icons/svg/precasts.svg"); }
     .delivery__item--facades:before {
       content: url("../../img/icons/svg/facades.svg"); }
     .delivery__item--fit-out:before {
-      content: url("../../img/icons/svg/fit-out.svg"); }
+      content: url("../img/icons/svg/fit-out.svg"); }
     .delivery__item--scaffolding:before {
-      content: url("../../img/icons/svg/scaffolding.svg"); }
+      content: url("../img/icons/svg/scaffolding.svg"); }
     .delivery__item--equipment:before {
-      content: url("../../img/icons/svg/equipment.svg"); }
+      content: url("../img/icons/svg/equipment.svg"); }
     .delivery__item--mep:before {
-      content: url("../../img/icons/svg/mep.svg"); }
+      content: url("../img/icons/svg/mep.svg"); }
   .delivery__subtitle {
     margin-top: 0;
     margin-bottom: 10px;
@@ -1305,11 +1315,11 @@ img {
       width: 48px;
       height: 48px; }
     .security__item--co2::before {
-      content: url("../../img/icons/svg/co2.svg"); }
+      content: url("../img/icons/svg/co2.svg"); }
     .security__item--eco::before {
-      content: url("../../img/icons/svg/eco-green.svg"); }
+      content: url("../img/icons/svg/eco-green.svg"); }
     .security__item--society::before {
-      content: url("../../img/icons/svg/society.svg"); }
+      content: url("../img/icons/svg/society.svg"); }
   .security__subtitle {
     margin-top: 0;
     margin-bottom: 10px;

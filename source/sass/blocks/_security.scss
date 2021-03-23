@@ -64,19 +64,19 @@
 
     &--co2 {
       &::before {
-        content: url("../../img/icons/svg/co2.svg");
+        content: url("../img/icons/svg/co2.svg");
       }
     }
 
     &--eco {
       &::before {
-        content: url("../../img/icons/svg/eco-green.svg");
+        content: url("../img/icons/svg/eco-green.svg");
       }
     }
 
     &--society {
       &::before {
-        content: url("../../img/icons/svg/society.svg");
+        content: url("../img/icons/svg/society.svg");
       }
     }
   }
