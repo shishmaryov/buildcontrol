@@ -24,6 +24,14 @@
     line-height: 32px;
     text-align: center;
     color: $black;
+    &::before {
+      content: url("../img/icons/svg/hands.svg");
+      position: absolute;
+      top: -10px;
+      left: calc(50% - 24px);
+      width: 48px;
+      height: 48px;
+    }
 
     @media (min-width: 1024px) {
       max-width: 100%;
@@ -36,15 +44,6 @@
         top: -10px;
         left: 0;
       }
-    }
-
-    &::before {
-      content: url("../img/icons/svg/hands.svg");
-      position: absolute;
-      top: -10px;
-      left: calc(50% - 24px);
-      width: 48px;
-      height: 48px;
     }
   }
 

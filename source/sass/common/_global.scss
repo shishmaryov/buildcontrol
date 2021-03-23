@@ -31,6 +31,7 @@ img {
 
     &:hover {
       background-color: #2D3A42;
+      transition: 0.3s;
     }
 
     &:active {
@@ -49,6 +50,7 @@ img {
 
     &:hover {
       color: #5C7585;
+      transition: 0.3s;
     }
 
     &:active {
@@ -77,6 +79,7 @@ img {
   &:hover {
     &:before {
       background-color: #FFE188;
+      transition: 0.3s;
     }
   }
 
