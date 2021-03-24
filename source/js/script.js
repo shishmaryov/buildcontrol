@@ -1,4 +1,11 @@
 $(document).ready(function(){
+	$('.header__burger').click(function(){
+		$('.header__nav').toggleClass('header__nav--active'); return false;
+	});
+});
+
+
+$(document).ready(function(){
 	$('.nav__link').click(function(e){
     	if($(this).attr('href').indexOf('#') != -1){ // Проверяем, является и ссылка действительно якорной ссылкой.
 			e.preventDefault(); // Отменяем событие перехода.
