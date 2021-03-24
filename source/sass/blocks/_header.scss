@@ -1,16 +1,67 @@
 .header {
-
-  margin-right: 30px;
+  width: 100%;
   margin-bottom: 75px;
-  margin-left: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 
   @media (min-width: 1140px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  &__burger {
+    position: relative;
+    z-index: 4;
+    display: block;
+    height: 37px;
+    padding-right: 70px;
+    border-radius: 50%;
+    margin-top: 60px;
+
+    @media(min-width: 1024px){
+      display: none;
+      padding-right: 0;
+    }
+  }
+  &__burger span,
+  &__burger span::before,
+  &__burger span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px; margin-top: -1px; margin-left: -10px;
+    background-color: $yellow;
+
+    &:hover {
+      background-color: $grey;
+    }
+  }
+  &__burger span::before,
+  &__burger span::after {
+    content: '';
+    display: block;
+    transition: 0.2s;
+  }
+  &__burger span::before {
+    transform: translateY(-5px);
+  }
+  &__burger span::after {
+    transform: translateY(5px);
+  }
+
+  &__burger--active span:before {
+    width: 10px;
+    transform: rotate(-35deg);
+    transform-origin: left bottom;
+  }
+  &__burger--active span:after {
+    width: 10px;
+    transform: rotate(35deg);
+    transform-origin: left top;
   }
 
   &__right {
@@ -41,6 +92,32 @@
     margin-right: auto;
     margin-bottom: 30px;
     margin-left: auto;
+    display: none;
+
+    @media(min-width: 1024px) {
+      display: block;
+    }
+
+    &--active {
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-radius: 10px;
+      position: absolute;
+      top: 190px;
+      left: 15px;
+      margin-right: 15px;
+      z-index: 3;
+      width: 100%;
+      background-color: $white;
+
+      .nav__list {
+        display: block;
+        text-align: center;
+        line-height: 3;
+      }
+    }
 
     @media (min-width: 768px) {
       width: 700px;

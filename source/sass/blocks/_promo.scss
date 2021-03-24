@@ -7,6 +7,8 @@
     text-align: center;
     @include h1;
     font-size: 24px;
+    line-height: 150%;
+    font-weight: 600;
 
     @media(min-width: 1024px) {
       @include h1;
@@ -21,16 +23,17 @@
     margin-right: auto;
     margin-bottom: 90px;
     margin-left: auto;
+    flex-wrap: wrap
   }
 
   &__button {
 
     &--black {
-
+      width: 181px;
     }
 
     &--light {
-
+      width: 150px;
     }
   }
 
