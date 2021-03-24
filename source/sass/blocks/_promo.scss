@@ -6,6 +6,11 @@
     margin-bottom: 30px;
     text-align: center;
     @include h1;
+    font-size: 24px;
+
+    @media(min-width: 1024px) {
+      @include h1;
+    }
   }
 
   &__buttons {

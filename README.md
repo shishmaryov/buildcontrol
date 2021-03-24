@@ -1,9 +1,9 @@
 # СтройКонтроль
 Web developer: Konstantin Shishmaryov 
 
-Designer: 
+Designer: ?
 
-[Design](https://) 
+[Design](https://bit.ly/31hohIi) 
 
 Site: <https://shishmaryov.github.io/buildcontrol/build/index.html> 
 
@@ -13,7 +13,8 @@ Demo:
 ## Tehnologies 
 - HTML5 
 - SCSS  
-- Javascript 
+- Animate.css
+- Javascript
 - Mobile first
 
 ## Google page speed:
